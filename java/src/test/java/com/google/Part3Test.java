@@ -36,8 +36,8 @@ public class Part3Test {
 
     videoPlayer.searchVideos("cat");
     assertTrue(outputStream.toString().contains("Here are the results for cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -51,8 +51,8 @@ public class Part3Test {
 
     videoPlayer.searchVideos("cat");
     assertTrue(outputStream.toString().contains("Here are the results for cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -66,8 +66,8 @@ public class Part3Test {
 
     videoPlayer.searchVideos("cat");
     assertTrue(outputStream.toString().contains("Here are the results for cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -80,8 +80,8 @@ public class Part3Test {
     System.setIn(new ByteArrayInputStream("ab3g\r\n".getBytes()));
     videoPlayer.searchVideos("cat");
     assertTrue(outputStream.toString().contains("Here are the results for cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -100,8 +100,8 @@ public class Part3Test {
     System.setIn(new ByteArrayInputStream("no\r\n".getBytes()));
     videoPlayer.searchVideosWithTag("#cat");
     assertTrue(outputStream.toString().contains("Here are the results for #cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -114,8 +114,8 @@ public class Part3Test {
     System.setIn(new ByteArrayInputStream("1\r\n".getBytes()));
     videoPlayer.searchVideosWithTag("#cat");
     assertTrue(outputStream.toString().contains("Here are the results for #cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
@@ -128,8 +128,8 @@ public class Part3Test {
     System.setIn(new ByteArrayInputStream("5\r\n".getBytes()));
     videoPlayer.searchVideosWithTag("#cat");
     assertTrue(outputStream.toString().contains("Here are the results for #cat:"));
-    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id)"));
-    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Amazing Cats (amazing_cats_video_id) [#cat #animal]"));
+    assertTrue(outputStream.toString().contains("2) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(

@@ -119,7 +119,7 @@ public class Part4Test {
     assertTrue(outputStream.toString()
         .contains("Successfully flagged video: Amazing Cats (reason: dont_like_cats)"));
     assertTrue(outputStream.toString().contains("Here are the results for cat:"));
-    assertTrue(outputStream.toString().contains("1) Another Cat Video (another_cat_video_id)"));
+    assertTrue(outputStream.toString().contains("1) Another Cat Video (another_cat_video_id) [#cat #animal]"));
     assertTrue(outputStream.toString().contains(
         "Would you like to play any of the above? If yes, specify the number of the video."));
     assertTrue(outputStream.toString().contains(
